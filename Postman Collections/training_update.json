@@ -1,0 +1,165 @@
+{
+	"info": {
+		"_postman_id": "3a34cc08-5a55-4d48-b144-7bcbadf168d9",
+		"name": "Training_update",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "brand-on-page",
+			"id": "d7d77463-643d-428c-8ef9-ba32af29f617",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "jwt",
+					"jwt": {
+						"secret": "{{secrete_key}}",
+						"addTokenTo": "header",
+						"payload": "",
+						"algorithm": "HS256",
+						"isSecretBase64Encoded": false,
+						"headerPrefix": "Bearer",
+						"queryParamKey": "token",
+						"header": "{}"
+					}
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "user_country_id",
+						"value": "231",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{URL}}ge-brand-list?user_country_id=101",
+					"host": [
+						"{{URL}}ge-brand-list"
+					],
+					"query": [
+						{
+							"key": "user_country_id",
+							"value": "101",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "brand-Header",
+			"id": "338feae1-346c-41b3-90dc-7718dbda11e5",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "jwt",
+					"jwt": {
+						"secret": "{{secrete_key}}",
+						"addTokenTo": "header",
+						"payload": "",
+						"algorithm": "HS256",
+						"isSecretBase64Encoded": false,
+						"headerPrefix": "Bearer",
+						"queryParamKey": "token",
+						"header": "{}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}ge-brand-for-header-list?user_country_id=101",
+					"host": [
+						"{{URL}}ge-brand-for-header-list"
+					],
+					"query": [
+						{
+							"key": "user_country_id",
+							"value": "101",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "domain-on-page",
+			"id": "0e59e12d-20a2-4b10-b8c6-e6ac212c3c5c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "jwt",
+					"jwt": {
+						"secret": "{{secrete_key}}",
+						"addTokenTo": "header",
+						"payload": "",
+						"algorithm": "HS256",
+						"isSecretBase64Encoded": false,
+						"headerPrefix": "Bearer",
+						"queryParamKey": "token",
+						"header": "{}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}ge-domain-list?user_country_id=101",
+					"host": [
+						"{{URL}}ge-domain-list"
+					],
+					"query": [
+						{
+							"key": "user_country_id",
+							"value": "101"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "domain-Header",
+			"id": "b9c589fb-820b-49bd-8c43-453ebbb461b6",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "jwt",
+					"jwt": {
+						"secret": "{{secrete_key}}",
+						"addTokenTo": "header",
+						"payload": "",
+						"algorithm": "HS256",
+						"isSecretBase64Encoded": false,
+						"headerPrefix": "Bearer",
+						"queryParamKey": "token",
+						"header": "{}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}ge-domain-for-header-list?user_country_id=101",
+					"host": [
+						"{{URL}}ge-domain-for-header-list"
+					],
+					"query": [
+						{
+							"key": "user_country_id",
+							"value": "101"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
