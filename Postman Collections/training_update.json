@@ -277,27 +277,15 @@
 					}
 				},
 				"url": {
-					"raw": "{{URL}}get-business-course-list?course_country_id=229&user_country_id=229&industry_id=3",
+					"raw": "{{URL}}get-course-list?country_id=250&brand_slug=aosh-uk-certification-courses",
 					"host": [
-						"{{URL}}get-business-course-list"
+						"{{URL}}get-course-list"
 					],
 					"query": [
-						{
-							"key": "course_country_id",
-							"value": "229"
-						},
-						{
-							"key": "user_country_id",
-							"value": "229"
-						},
 						{
 							"key": "city_id",
 							"value": "1",
 							"disabled": true
-						},
-						{
-							"key": "industry_id",
-							"value": "3"
 						},
 						{
 							"key": "delivery_format_id",
@@ -307,11 +295,6 @@
 						{
 							"key": "delivery_format_id",
 							"value": "1",
-							"disabled": true
-						},
-						{
-							"key": "industry_slug",
-							"value": "construction-engineering-maintenance",
 							"disabled": true
 						},
 						{
@@ -349,6 +332,20 @@
 							"key": "page_size",
 							"value": "5",
 							"disabled": true
+						},
+						{
+							"key": "country_id",
+							"value": "250"
+						},
+						{
+							"key": "domain_slug",
+							"value": "databases-and-data-management",
+							"disabled": true
+						},
+						{
+							"key": "brand_slug",
+							"value": "aosh-uk-certification-courses",
+							"type": "text"
 						}
 					]
 				}
