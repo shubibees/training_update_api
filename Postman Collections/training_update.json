@@ -220,25 +220,25 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{URL}}get-course-slug/databases-and-data-management?course_country_id=249&category_slug=quality-management&user_country_id=249",
+					"raw": "{{URL}}get-course-slug/prince2-foundation-certification-indore?course_country_id=110&category_slug=project-management&user_country_id=110",
 					"host": [
 						"{{URL}}get-course-slug"
 					],
 					"path": [
-						"databases-and-data-management"
+						"prince2-foundation-certification-indore"
 					],
 					"query": [
 						{
 							"key": "course_country_id",
-							"value": "249"
+							"value": "110"
 						},
 						{
 							"key": "category_slug",
-							"value": "quality-management"
+							"value": "project-management"
 						},
 						{
 							"key": "user_country_id",
-							"value": "249"
+							"value": "110"
 						}
 					]
 				}
