@@ -72,14 +72,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{URL}}ge-brand-for-header-list?user_country_id=101",
+					"raw": "{{URL}}ge-brand-for-header-list?country_id=200",
 					"host": [
 						"{{URL}}ge-brand-for-header-list"
 					],
 					"query": [
 						{
-							"key": "user_country_id",
-							"value": "101"
+							"key": "country_id",
+							"value": "200"
 						}
 					]
 				}
