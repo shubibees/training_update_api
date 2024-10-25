@@ -7,6 +7,60 @@
 	"item": [
 		{
 			"name": "brand-on-page",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c343a61d-18d8-4851-ab4a-a293f7779d5a",
+						"exec": [
+							"var template = `\r",
+							"<style type=\"text/css\">\r",
+							"    .tftable {font-size:14px;color:#333333;width:100%;border-width: 1px;border-color: #87ceeb;border-collapse: collapse;}\r",
+							"    .tftable th {font-size:18px;background-color:#87ceeb;border-width: 1px;padding: 8px;border-style: solid;border-color: #87ceeb;text-align:left;}\r",
+							"    .tftable tr {background-color:#ffffff;}\r",
+							"    .tftable td {font-size:14px;border-width: 1px;padding: 8px;border-style: solid;border-color: #87ceeb;}\r",
+							"    .tftable tr:hover {background-color:#e0ffff;}\r",
+							"</style>\r",
+							"\r",
+							"<table class=\"tftable\" border=\"1\">\r",
+							"    <tr>\r",
+							"        <th>ID</th>\r",
+							"        <th>Title</th>\r",
+							"        <th>Slug</th>\r",
+							"        <th>Banner</th>\r",
+							"        <th>Icon</th>\r",
+							"        <th>OG Description</th>\r",
+							"        <th>OG Image</th>\r",
+							"    </tr>\r",
+							"    \r",
+							"    {{#each response}}\r",
+							"        <tr>\r",
+							"            <td>{{id}}</td>\r",
+							"            <td>{{title}}</td>\r",
+							"            <td>{{slug}}</td>\r",
+							"            <td>{{banner}}</td>\r",
+							"            <td>{{icon}}</td>\r",
+							"            <td>{{description}}</td>\r",
+							"            <td>{{meta_title}}</td>\r",
+							"            <td>{{meta_description}}</td>\r",
+							"            <td>{{og_description}}</td>\r",
+							"            <td>{{og_image}}</td>\r",
+							"        </tr>\r",
+							"    {{/each}}\r",
+							"</table>\r",
+							"`;\r",
+							"\r",
+							"function constructVisualizerPayload() {\r",
+							"    return {response: pm.response.json()}\r",
+							"}\r",
+							"\r",
+							"pm.visualizer.set(template, constructVisualizerPayload());"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
 			"id": "d7d77463-643d-428c-8ef9-ba32af29f617",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -41,8 +95,7 @@
 					"query": [
 						{
 							"key": "user_country_id",
-							"value": "101",
-							"type": "text"
+							"value": "101"
 						}
 					]
 				}
