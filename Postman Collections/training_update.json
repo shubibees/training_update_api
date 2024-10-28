@@ -119,14 +119,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{URL}}ge-brand-for-header-list?country_id=200",
+					"raw": "{{URL}}ge-brand-for-header-list?country_id=101",
 					"host": [
 						"{{URL}}ge-brand-for-header-list"
 					],
 					"query": [
 						{
 							"key": "country_id",
-							"value": "200"
+							"value": "101"
 						}
 					]
 				}
@@ -193,14 +193,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{URL}}ge-domain-for-header-list?user_country_id=101",
+					"raw": "{{URL}}ge-domain-for-header-list?country_id=191",
 					"host": [
 						"{{URL}}ge-domain-for-header-list"
 					],
 					"query": [
 						{
-							"key": "user_country_id",
-							"value": "101"
+							"key": "country_id",
+							"value": "191"
 						}
 					]
 				}
@@ -267,25 +267,21 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{URL}}get-course-slug/prince2-foundation-certification-indore?course_country_id=110&category_slug=project-management&user_country_id=110",
+					"raw": "{{URL}}get-course-slug/ms-project-2016-intermediate-certification?category_slug=project-management&course_country_id=231",
 					"host": [
 						"{{URL}}get-course-slug"
 					],
 					"path": [
-						"prince2-foundation-certification-indore"
+						"ms-project-2016-intermediate-certification"
 					],
 					"query": [
-						{
-							"key": "course_country_id",
-							"value": "110"
-						},
 						{
 							"key": "category_slug",
 							"value": "project-management"
 						},
 						{
-							"key": "user_country_id",
-							"value": "110"
+							"key": "course_country_id",
+							"value": "231"
 						}
 					]
 				}
@@ -324,7 +320,7 @@
 					}
 				},
 				"url": {
-					"raw": "{{URL}}get-course-list?country_id=250&brand_slug=aosh-uk-certification-courses",
+					"raw": "{{URL}}get-course-list?domain_slug=project-management&course_country_id=231",
 					"host": [
 						"{{URL}}get-course-list"
 					],
@@ -381,18 +377,17 @@
 							"disabled": true
 						},
 						{
-							"key": "country_id",
-							"value": "250"
-						},
-						{
-							"key": "domain_slug",
-							"value": "databases-and-data-management",
+							"key": "brand_slug",
+							"value": "aosh-uk-certification-courses",
 							"disabled": true
 						},
 						{
-							"key": "brand_slug",
-							"value": "aosh-uk-certification-courses",
-							"type": "text"
+							"key": "domain_slug",
+							"value": "project-management"
+						},
+						{
+							"key": "course_country_id",
+							"value": "231"
 						}
 					]
 				}
