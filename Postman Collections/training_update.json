@@ -11,7 +11,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "c343a61d-18d8-4851-ab4a-a293f7779d5a",
+						"id": "45f01979-c0be-4eb5-839b-6a0bcfa854cd",
 						"exec": [
 							"var template = `\r",
 							"<style type=\"text/css\">\r",
@@ -29,8 +29,6 @@
 							"        <th>Slug</th>\r",
 							"        <th>Banner</th>\r",
 							"        <th>Icon</th>\r",
-							"        <th>OG Description</th>\r",
-							"        <th>OG Image</th>\r",
 							"    </tr>\r",
 							"    \r",
 							"    {{#each response}}\r",
@@ -40,11 +38,7 @@
 							"            <td>{{slug}}</td>\r",
 							"            <td>{{banner}}</td>\r",
 							"            <td>{{icon}}</td>\r",
-							"            <td>{{description}}</td>\r",
-							"            <td>{{meta_title}}</td>\r",
-							"            <td>{{meta_description}}</td>\r",
-							"            <td>{{og_description}}</td>\r",
-							"            <td>{{og_image}}</td>\r",
+							"         \r",
 							"        </tr>\r",
 							"    {{/each}}\r",
 							"</table>\r",
@@ -88,14 +82,14 @@
 					}
 				],
 				"url": {
-					"raw": "{{URL}}ge-brand-list?user_country_id=101",
+					"raw": "{{URL}}ge-brand-list?country_id=232",
 					"host": [
 						"{{URL}}ge-brand-list"
 					],
 					"query": [
 						{
-							"key": "user_country_id",
-							"value": "101"
+							"key": "country_id",
+							"value": "232"
 						}
 					]
 				}
