@@ -119,14 +119,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{URL}}ge-brand-for-header-list?country_id=101",
+					"raw": "{{URL}}ge-brand-for-header-list?country_id=231",
 					"host": [
 						"{{URL}}ge-brand-for-header-list"
 					],
 					"query": [
 						{
 							"key": "country_id",
-							"value": "101"
+							"value": "231"
 						}
 					]
 				}
@@ -417,30 +417,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{URL}}get-course-list?page=1&domain_slug=project-management&course_country_id=250&user_country_id=101&city_id=0",
+					"raw": "{{URL}}get-certification-training-page?country_id=231",
 					"host": [
-						"{{URL}}get-course-list"
+						"{{URL}}get-certification-training-page"
 					],
 					"query": [
 						{
-							"key": "page",
-							"value": "1"
-						},
-						{
-							"key": "domain_slug",
-							"value": "project-management"
-						},
-						{
-							"key": "course_country_id",
-							"value": "250"
-						},
-						{
-							"key": "user_country_id",
-							"value": "101"
-						},
-						{
-							"key": "city_id",
-							"value": "0"
+							"key": "country_id",
+							"value": "231"
 						}
 					]
 				}
