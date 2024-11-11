@@ -320,7 +320,7 @@
 					}
 				},
 				"url": {
-					"raw": "{{URL}}get-course-list?domain_slug=project-management&course_country_id=231",
+					"raw": "{{URL}}get-course-list?domain_slug=project-management&course_country_id=191",
 					"host": [
 						"{{URL}}get-course-list"
 					],
@@ -387,7 +387,7 @@
 						},
 						{
 							"key": "course_country_id",
-							"value": "231"
+							"value": "191"
 						}
 					]
 				}
