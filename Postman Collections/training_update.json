@@ -267,12 +267,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{URL}}get-course-slug/ms-project-2016-intermediate-certification?category_slug=project-management&course_country_id=231",
+					"raw": "{{URL}}get-course-slug/pmp-certification?category_slug=project-management&course_country_id=191",
 					"host": [
 						"{{URL}}get-course-slug"
 					],
 					"path": [
-						"ms-project-2016-intermediate-certification"
+						"pmp-certification"
 					],
 					"query": [
 						{
@@ -281,7 +281,7 @@
 						},
 						{
 							"key": "course_country_id",
-							"value": "231"
+							"value": "191"
 						}
 					]
 				}
