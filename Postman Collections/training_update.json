@@ -230,14 +230,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{URL}}get-certification-training-page?country_id=101",
+					"raw": "{{URL}}get-certification-training-page?country_id=229",
 					"host": [
 						"{{URL}}get-certification-training-page"
 					],
 					"query": [
 						{
 							"key": "country_id",
-							"value": "101"
+							"value": "229"
 						}
 					]
 				}
