@@ -320,7 +320,7 @@
 					}
 				},
 				"url": {
-					"raw": "{{URL}}get-course-list?domain_slug=project-management&course_country_id=191",
+					"raw": "{{URL}}get-course-list?course_country_id=231&domain_slug=data-analytics-and-bi",
 					"host": [
 						"{{URL}}get-course-list"
 					],
@@ -382,12 +382,12 @@
 							"disabled": true
 						},
 						{
-							"key": "domain_slug",
-							"value": "project-management"
+							"key": "course_country_id",
+							"value": "231"
 						},
 						{
-							"key": "course_country_id",
-							"value": "191"
+							"key": "domain_slug",
+							"value": "data-analytics-and-bi"
 						}
 					]
 				}
