@@ -156,14 +156,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{URL}}ge-domain-list?user_country_id=101",
+					"raw": "{{URL}}ge-domain-list?user_country_id=229",
 					"host": [
 						"{{URL}}ge-domain-list"
 					],
 					"query": [
 						{
 							"key": "user_country_id",
-							"value": "101"
+							"value": "229"
 						}
 					]
 				}
@@ -230,14 +230,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{URL}}get-certification-training-page?country_id=229",
+					"raw": "{{URL}}get-certification-training-page?country_id=234",
 					"host": [
 						"{{URL}}get-certification-training-page"
 					],
 					"query": [
 						{
 							"key": "country_id",
-							"value": "229"
+							"value": "234"
 						}
 					]
 				}
