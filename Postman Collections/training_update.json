@@ -6,6 +6,117 @@
 	},
 	"item": [
 		{
+			"name": "brand-Header",
+			"id": "338feae1-346c-41b3-90dc-7718dbda11e5",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "jwt",
+					"jwt": {
+						"secret": "{{secrete_key}}",
+						"addTokenTo": "header",
+						"payload": "",
+						"algorithm": "HS256",
+						"isSecretBase64Encoded": false,
+						"headerPrefix": "Bearer",
+						"queryParamKey": "token",
+						"header": "{}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}ge-brand-for-header-list?country_id=231",
+					"host": [
+						"{{URL}}ge-brand-for-header-list"
+					],
+					"query": [
+						{
+							"key": "country_id",
+							"value": "231"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "domain-Header",
+			"id": "b9c589fb-820b-49bd-8c43-453ebbb461b6",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "jwt",
+					"jwt": {
+						"secret": "{{secrete_key}}",
+						"addTokenTo": "header",
+						"payload": "",
+						"algorithm": "HS256",
+						"isSecretBase64Encoded": false,
+						"headerPrefix": "Bearer",
+						"queryParamKey": "token",
+						"header": "{}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}ge-domain-for-header-list?country_id=191",
+					"host": [
+						"{{URL}}ge-domain-for-header-list"
+					],
+					"query": [
+						{
+							"key": "country_id",
+							"value": "191"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "domain-on-page",
+			"id": "0e59e12d-20a2-4b10-b8c6-e6ac212c3c5c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "jwt",
+					"jwt": {
+						"secret": "{{secrete_key}}",
+						"addTokenTo": "header",
+						"payload": "",
+						"algorithm": "HS256",
+						"isSecretBase64Encoded": false,
+						"headerPrefix": "Bearer",
+						"queryParamKey": "token",
+						"header": "{}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}ge-domain-list?user_country_id=229",
+					"host": [
+						"{{URL}}ge-domain-list"
+					],
+					"query": [
+						{
+							"key": "user_country_id",
+							"value": "229"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "brand-on-page",
 			"event": [
 				{
@@ -97,117 +208,6 @@
 			"response": []
 		},
 		{
-			"name": "brand-Header",
-			"id": "338feae1-346c-41b3-90dc-7718dbda11e5",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"auth": {
-					"type": "jwt",
-					"jwt": {
-						"secret": "{{secrete_key}}",
-						"addTokenTo": "header",
-						"payload": "",
-						"algorithm": "HS256",
-						"isSecretBase64Encoded": false,
-						"headerPrefix": "Bearer",
-						"queryParamKey": "token",
-						"header": "{}"
-					}
-				},
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "{{URL}}ge-brand-for-header-list?country_id=231",
-					"host": [
-						"{{URL}}ge-brand-for-header-list"
-					],
-					"query": [
-						{
-							"key": "country_id",
-							"value": "231"
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "domain-on-page",
-			"id": "0e59e12d-20a2-4b10-b8c6-e6ac212c3c5c",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"auth": {
-					"type": "jwt",
-					"jwt": {
-						"secret": "{{secrete_key}}",
-						"addTokenTo": "header",
-						"payload": "",
-						"algorithm": "HS256",
-						"isSecretBase64Encoded": false,
-						"headerPrefix": "Bearer",
-						"queryParamKey": "token",
-						"header": "{}"
-					}
-				},
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "{{URL}}ge-domain-list?user_country_id=229",
-					"host": [
-						"{{URL}}ge-domain-list"
-					],
-					"query": [
-						{
-							"key": "user_country_id",
-							"value": "229"
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "domain-Header",
-			"id": "b9c589fb-820b-49bd-8c43-453ebbb461b6",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"auth": {
-					"type": "jwt",
-					"jwt": {
-						"secret": "{{secrete_key}}",
-						"addTokenTo": "header",
-						"payload": "",
-						"algorithm": "HS256",
-						"isSecretBase64Encoded": false,
-						"headerPrefix": "Bearer",
-						"queryParamKey": "token",
-						"header": "{}"
-					}
-				},
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "{{URL}}ge-domain-for-header-list?country_id=191",
-					"host": [
-						"{{URL}}ge-domain-for-header-list"
-					],
-					"query": [
-						{
-							"key": "country_id",
-							"value": "191"
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
 			"name": "New Request",
 			"id": "1084d0c3-665f-4152-b706-fc2de0246fc7",
 			"protocolProfileBehavior": {
@@ -267,12 +267,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{URL}}get-course-slug/pmp-certification?category_slug=project-management&course_country_id=191",
+					"raw": "{{URL}}get-course-slug/autodesk-autocad-2024-beyond-basics-certification?category_slug=project-management&course_country_id=191",
 					"host": [
 						"{{URL}}get-course-slug"
 					],
 					"path": [
-						"pmp-certification"
+						"autodesk-autocad-2024-beyond-basics-certification"
 					],
 					"query": [
 						{
