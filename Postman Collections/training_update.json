@@ -430,6 +430,18 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "case study",
+			"id": "f8184b63-b197-4b54-ba52-99662b423295",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
 		}
 	]
 }
