@@ -438,8 +438,44 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "jwt",
+					"jwt": {
+						"secret": "98a144c773b6518a2e08d0b147edd10761bd35dd6cf5f8f0684a88a7c14548d0",
+						"algorithm": "HS256",
+						"isSecretBase64Encoded": false,
+						"payload": "{}",
+						"addTokenTo": "header",
+						"headerPrefix": "Bearer",
+						"queryParamKey": "token",
+						"header": "{}"
+					}
+				},
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "https://www.vinsys.com/api/get-case-study-list?module_id=2&page=2",
+					"protocol": "https",
+					"host": [
+						"www",
+						"vinsys",
+						"com"
+					],
+					"path": [
+						"api",
+						"get-case-study-list"
+					],
+					"query": [
+						{
+							"key": "module_id",
+							"value": "2"
+						},
+						{
+							"key": "page",
+							"value": "2"
+						}
+					]
+				}
 			},
 			"response": []
 		}
