@@ -478,6 +478,18 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "get-region-country",
+			"id": "b86fa733-827c-4654-b81a-895c58520aa2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
 		}
 	]
 }
