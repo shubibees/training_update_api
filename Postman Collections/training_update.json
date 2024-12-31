@@ -320,9 +320,9 @@
 					}
 				},
 				"url": {
-					"raw": "{{URL}}get-course-list?course_country_id=191&domain_slug=project-management",
+					"raw": "{{URL}}get-course-title-search?page_size=100000&search=certificate",
 					"host": [
-						"{{URL}}get-course-list"
+						"{{URL}}get-course-title-search"
 					],
 					"query": [
 						{
@@ -372,22 +372,17 @@
 							"disabled": true
 						},
 						{
-							"key": "page_size",
-							"value": "5",
-							"disabled": true
-						},
-						{
 							"key": "brand_slug",
 							"value": "aosh-uk-certification-courses",
 							"disabled": true
 						},
 						{
-							"key": "course_country_id",
-							"value": "191"
+							"key": "page_size",
+							"value": "100000"
 						},
 						{
-							"key": "domain_slug",
-							"value": "project-management"
+							"key": "search",
+							"value": "certificate"
 						}
 					]
 				}
@@ -486,8 +481,22 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "jwt",
+					"jwt": {
+						"secret": "{{secrete_key}}",
+						"algorithm": "HS256",
+						"isSecretBase64Encoded": false,
+						"payload": "{}",
+						"addTokenTo": "header",
+						"headerPrefix": "Bearer",
+						"queryParamKey": "token",
+						"header": "{}"
+					}
+				},
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": "{{URL}}get-course-country"
 			},
 			"response": []
 		}
