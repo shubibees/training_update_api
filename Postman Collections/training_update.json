@@ -499,6 +499,18 @@
 				"url": "{{URL}}get-course-country"
 			},
 			"response": []
+		},
+		{
+			"name": "/get-course-list",
+			"id": "8de0ad15-e531-4c61-b42e-0a6cfd4e2ecd",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
 		}
 	]
 }
