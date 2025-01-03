@@ -507,8 +507,22 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "jwt",
+					"jwt": {
+						"secret": "{{secrete_key}}",
+						"algorithm": "HS256",
+						"isSecretBase64Encoded": false,
+						"payload": "{}",
+						"addTokenTo": "header",
+						"headerPrefix": "Bearer",
+						"queryParamKey": "token",
+						"header": "{}"
+					}
+				},
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": "{{URL}}get-course-list&user_country_id=231&domain_slug="
 			},
 			"response": []
 		}
