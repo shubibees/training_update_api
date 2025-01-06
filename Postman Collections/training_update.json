@@ -525,6 +525,18 @@
 				"url": "{{URL}}get-course-list&user_country_id=231&domain_slug="
 			},
 			"response": []
+		},
+		{
+			"name": "reset-password",
+			"id": "60ad2a7d-8b4d-44cf-a0f4-7862e0e54ca4",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
 		}
 	]
 }
